@@ -84,7 +84,7 @@ export default function AboutPage() {
       {/* Hero Section */}
       <section className="relative pt-32 pb-20 overflow-hidden bg-white dark:bg-black">
         <div className="absolute inset-0 opacity-[0.03]">
-          <div className="absolute inset-0" style={{ backgroundImage: 'radial-gradient(circle, currentColor 1px, transparent 1px)', backgroundSize: '40px 40px' }} className="text-black dark:text-white"></div>
+          <div className="absolute inset-0 text-black dark:text-white" style={{ backgroundImage: 'radial-gradient(circle, currentColor 1px, transparent 1px)', backgroundSize: '40px 40px' }}></div>
         </div>
         
         <div className="container mx-auto px-4 relative z-10">

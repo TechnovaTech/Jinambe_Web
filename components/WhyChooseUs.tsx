@@ -40,7 +40,7 @@ export default function WhyChooseUs() {
     <section className="relative py-32 bg-white dark:bg-black overflow-hidden">
       {/* Background Grid Pattern */}
       <div className="absolute inset-0 opacity-[0.03]">
-        <div className="absolute inset-0" style={{ backgroundImage: 'radial-gradient(circle, currentColor 1px, transparent 1px)', backgroundSize: '40px 40px' }} className="text-black dark:text-white"></div>
+        <div className="absolute inset-0 text-black dark:text-white" style={{ backgroundImage: 'radial-gradient(circle, currentColor 1px, transparent 1px)', backgroundSize: '40px 40px' }}></div>
       </div>
 
       <div className="container mx-auto px-4 relative z-10 max-w-7xl">

@@ -116,51 +116,23 @@ export default function ContactPage() {
               initial={{ opacity: 0, x: 30 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ delay: 0.3 }}
-              className="space-y-4"
+              className="space-y-6"
             >
-              <div className="bg-gray-50 dark:bg-gray-950 p-6 rounded-xl border border-black/10 dark:border-white/10">
-                <div className="flex items-start gap-4">
-                  <div className="text-2xl">📧</div>
-                  <div>
-                    <h3 className="text-sm font-medium text-black dark:text-white mb-1">Email Us</h3>
-                    <p className="text-sm text-gray-600 dark:text-gray-400 font-light">info@jinambe.com</p>
-                  </div>
-                </div>
+              <div className="bg-gray-50 dark:bg-gray-950 p-8 rounded-2xl border border-black/10 dark:border-white/10">
+                <h3 className="text-sm font-medium text-black dark:text-white mb-2 uppercase tracking-wider">Email</h3>
+                <a href="mailto:info@jinambe.com" className="text-lg text-gray-600 dark:text-gray-400 font-light hover:text-black dark:hover:text-white transition-colors">
+                  info@jinambe.com
+                </a>
               </div>
 
-              <div className="bg-gray-50 dark:bg-gray-950 p-6 rounded-xl border border-black/10 dark:border-white/10">
-                <div className="flex items-start gap-4">
-                  <div className="text-2xl">📞</div>
-                  <div>
-                    <h3 className="text-sm font-medium text-black dark:text-white mb-1">Call Us</h3>
-                    <p className="text-sm text-gray-600 dark:text-gray-400 font-light">+91 77779 94472</p>
-                  </div>
-                </div>
+              <div className="bg-gray-50 dark:bg-gray-950 p-8 rounded-2xl border border-black/10 dark:border-white/10">
+                <h3 className="text-sm font-medium text-black dark:text-white mb-2 uppercase tracking-wider">Phone</h3>
+                <a href="tel:+917777994472" className="text-lg text-gray-600 dark:text-gray-400 font-light hover:text-black dark:hover:text-white transition-colors">
+                  +91 77779 94472
+                </a>
               </div>
 
-              <div className="bg-gray-50 dark:bg-gray-950 p-6 rounded-xl border border-black/10 dark:border-white/10">
-                <div className="flex items-start gap-4">
-                  <div className="text-2xl">📍</div>
-                  <div>
-                    <h3 className="text-sm font-medium text-black dark:text-white mb-1">Visit Us</h3>
-                    <p className="text-sm text-gray-600 dark:text-gray-400 font-light">New York, NY 10001</p>
-                  </div>
-                </div>
-              </div>
-
-              <div className="bg-gray-50 dark:bg-gray-950 p-6 rounded-xl border border-black/10 dark:border-white/10">
-                <div className="flex items-start gap-4">
-                  <div className="text-2xl">🌐</div>
-                  <div>
-                    <h3 className="text-sm font-medium text-black dark:text-white mb-1">Follow Us</h3>
-                    <div className="flex gap-3 mt-2">
-                      <a href="#" className="text-xs text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white transition-colors">LinkedIn</a>
-                      <a href="#" className="text-xs text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white transition-colors">Twitter</a>
-                      <a href="#" className="text-xs text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white transition-colors">GitHub</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
+             
             </motion.div>
           </div>
         </div>

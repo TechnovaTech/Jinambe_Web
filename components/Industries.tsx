@@ -34,7 +34,7 @@ export default function Industries() {
     <section id="industries" className="relative py-32 bg-gray-50 dark:bg-gray-950 overflow-hidden">
       {/* Striped Background */}
       <div className="absolute inset-0 opacity-[0.02]">
-        <div className="absolute inset-0" style={{ backgroundImage: 'repeating-linear-gradient(45deg, currentColor 0px, currentColor 2px, transparent 2px, transparent 40px)' }} className="text-black dark:text-white"></div>
+        <div className="absolute inset-0 text-black dark:text-white" style={{ backgroundImage: 'repeating-linear-gradient(45deg, currentColor 0px, currentColor 2px, transparent 2px, transparent 40px)' }}></div>
       </div>
       
       <div className="container mx-auto px-4 relative z-10 max-w-7xl">
