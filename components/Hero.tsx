@@ -21,7 +21,7 @@ export default function Hero() {
   }, []);
 
   return (
-    <section className="relative flex items-center justify-center pt-20 pb-0 bg-white dark:bg-black" style={{ minHeight: '120vh' }}>
+    <section className="relative flex items-center justify-center pt-20 pb-0 bg-white dark:bg-black" style={{ minHeight: '80vh' }}>
       {/* Animated Particles */}
       <div className="absolute inset-0 overflow-hidden">
         {particles.map((particle, i) => (
@@ -69,18 +69,18 @@ export default function Hero() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="text-6xl md:text-8xl lg:text-9xl font-light text-black dark:text-white mb-8 tracking-tighter leading-[0.9]"
+          className="text-6xl md:text-8xl lg:text-9xl font-light text-black dark:text-white mb-6 tracking-tighter leading-[0.9]"
         >
           Digital
           <br />
-          <span className="font-extralight italic">Transformation</span>
+          <span>Transformation</span>
         </motion.h1>
         
         <motion.p
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="text-lg md:text-xl text-gray-600 dark:text-gray-400 mb-16 max-w-2xl mx-auto font-light tracking-wide"
+          className="text-lg md:text-xl text-gray-600 dark:text-gray-400 mb-10 max-w-2xl mx-auto font-light tracking-wide"
         >
           Your Complete Digital Transformation Partner
         </motion.p>

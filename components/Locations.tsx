@@ -9,7 +9,7 @@ const locations = [
 
 export default function Locations() {
   return (
-    <section className="py-32 bg-gray-50 dark:bg-gray-950">
+    <section className="py-16 bg-gray-50 dark:bg-gray-950">
       <div className="container mx-auto px-4">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}

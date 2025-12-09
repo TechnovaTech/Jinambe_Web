@@ -39,7 +39,7 @@ const solutions = [
 
 export default function About() {
   return (
-    <section id="about" className="relative overflow-hidden bg-white dark:bg-black py-32">
+    <section id="about" className="relative overflow-hidden bg-white dark:bg-black py-16">
       {/* Background Shapes */}
       <div className="absolute inset-0 overflow-hidden opacity-5">
         <div className="absolute top-20 -right-40 w-80 h-80 bg-black dark:bg-white rounded-full blur-3xl"></div>
@@ -61,7 +61,7 @@ export default function About() {
             <span className="text-xs font-medium text-black dark:text-white tracking-widest uppercase">About Us</span>
           </div>
           <h2 className="text-5xl md:text-7xl font-light text-black dark:text-white tracking-tighter mb-6">
-            <span className="italic font-extralight">Jinambe</span> Technologies
+            <span>Jinambe</span> Technologies
           </h2>
         </motion.div>
 

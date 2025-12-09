@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { ThemeProvider } from "@/components/ThemeProvider";
+import WhatsAppButton from "@/components/WhatsAppButton";
 
 export const metadata: Metadata = {
   title: "Jinambe Technologies - Digital Transformation Partner",
@@ -17,6 +18,7 @@ export default function RootLayout({
       <body>
         <ThemeProvider>
           {children}
+          <WhatsAppButton />
         </ThemeProvider>
       </body>
     </html>

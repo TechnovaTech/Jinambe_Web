@@ -37,7 +37,7 @@ const features = [
 
 export default function WhyChooseUs() {
   return (
-    <section className="relative py-32 bg-white dark:bg-black overflow-hidden">
+    <section className="relative py-16 bg-white dark:bg-black overflow-hidden">
       {/* Background Grid Pattern */}
       <div className="absolute inset-0 opacity-[0.03]">
         <div className="absolute inset-0 text-black dark:text-white" style={{ backgroundImage: 'radial-gradient(circle, currentColor 1px, transparent 1px)', backgroundSize: '40px 40px' }}></div>
@@ -54,7 +54,7 @@ export default function WhyChooseUs() {
             <span className="text-xs font-medium text-black dark:text-white tracking-widest uppercase">Why Us</span>
           </div>
           <h2 className="text-5xl md:text-7xl font-light text-black dark:text-white mb-6 tracking-tighter">
-            Why <span className="italic font-extralight">Choose Us</span>
+            Why <span>Choose Us</span>
           </h2>
           <p className="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto font-light text-base">
             Partner with a team that combines innovation, expertise, and dedication

@@ -31,7 +31,7 @@ const industries = [
 
 export default function Industries() {
   return (
-    <section id="industries" className="relative py-32 bg-gray-50 dark:bg-gray-950 overflow-hidden">
+    <section id="industries" className="relative py-16 bg-gray-50 dark:bg-gray-950 overflow-hidden">
       {/* Striped Background */}
       <div className="absolute inset-0 opacity-[0.02]">
         <div className="absolute inset-0 text-black dark:text-white" style={{ backgroundImage: 'repeating-linear-gradient(45deg, currentColor 0px, currentColor 2px, transparent 2px, transparent 40px)' }}></div>
@@ -48,7 +48,7 @@ export default function Industries() {
             <span className="text-xs font-medium text-black dark:text-white tracking-widest uppercase">Industries</span>
           </div>
           <h2 className="text-5xl md:text-7xl font-light text-black dark:text-white mb-6 tracking-tighter">
-            Industries We <span className="italic font-extralight">Serve</span>
+            Industries We <span>Serve</span>
           </h2>
         </motion.div>
 

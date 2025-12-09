@@ -122,7 +122,7 @@ export default function Reviews() {
           className="text-center mb-16"
         >
           <h2 className="text-5xl md:text-6xl font-light text-black dark:text-white mb-6 tracking-tighter">
-            <span className="italic font-extralight">Reviews</span>
+            <span>Reviews</span>
           </h2>
           <p className="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto font-light text-sm">
             Don't just take our word for it - hear what our clients have to say about their experience
@@ -154,7 +154,7 @@ export default function Reviews() {
                   </div>
 
                   {/* Review Text */}
-                  <p className="text-gray-800 dark:text-gray-200 mb-4 leading-relaxed italic text-sm line-clamp-4 font-medium">
+                  <p className="text-gray-800 dark:text-gray-200 mb-4 leading-relaxed text-sm line-clamp-4 font-medium">
                     "{review.review}"
                   </p>
 

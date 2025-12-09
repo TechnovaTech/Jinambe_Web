@@ -24,7 +24,12 @@ export default function Header() {
             <img 
               src="/logo.png" 
               alt="Jinambe Technologies" 
-              className="h-16 w-auto group-hover:scale-105 transition-transform"
+              className="h-16 w-40 object-contain group-hover:scale-105 transition-transform dark:hidden"
+            />
+            <img 
+              src="/logo (3).png" 
+              alt="Jinambe Technologies" 
+              className="h-16 w-40 object-contain group-hover:scale-105 transition-transform hidden dark:block"
             />
           </a>
           

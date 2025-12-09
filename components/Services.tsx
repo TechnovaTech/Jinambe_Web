@@ -47,7 +47,7 @@ const services = [
 
 export default function Services() {
   return (
-    <section id="services" className="relative py-32 bg-gray-50 dark:bg-gray-950 overflow-hidden">
+    <section id="services" className="relative py-16 bg-gray-50 dark:bg-gray-950 overflow-hidden">
       {/* Background Shapes */}
       <div className="absolute inset-0 overflow-hidden opacity-5">
         <div className="absolute top-40 left-20 w-96 h-96 bg-black dark:bg-white rounded-full blur-3xl"></div>
@@ -65,7 +65,7 @@ export default function Services() {
             <span className="text-xs font-medium text-black dark:text-white tracking-widest uppercase">What We Offer</span>
           </div>
           <h2 className="text-5xl md:text-7xl font-light text-black dark:text-white mb-6 tracking-tighter">
-            Our <span className="italic font-extralight">Services</span>
+            Our <span>Services</span>
           </h2>
           <p className="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto font-light text-base">
             Comprehensive digital solutions powered by cutting-edge technology
