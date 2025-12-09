@@ -1,20 +1,24 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { useMemo } from 'react';
+import { useState, useEffect } from 'react';
 
 export default function Hero() {
-  const particles = useMemo(() => 
-    [...Array(80)].map(() => ({
-      size: Math.random() * 8 + 4,
-      left: Math.random() * 100,
-      top: Math.random() * 100,
-      x: Math.random() * 100 - 50,
-      y: Math.random() * 100 - 50,
-      scale: Math.random() + 0.5,
-      duration: Math.random() * 10 + 10
-    })), []
-  );
+  const [particles, setParticles] = useState<any[]>([]);
+
+  useEffect(() => {
+    setParticles(
+      [...Array(80)].map(() => ({
+        size: Math.random() * 8 + 4,
+        left: Math.random() * 100,
+        top: Math.random() * 100,
+        x: Math.random() * 100 - 50,
+        y: Math.random() * 100 - 50,
+        scale: Math.random() + 0.5,
+        duration: Math.random() * 10 + 10
+      }))
+    );
+  }, []);
 
   return (
     <section className="relative flex items-center justify-center pt-20 pb-0 bg-white dark:bg-black" style={{ minHeight: '120vh' }}>
