@@ -5,7 +5,7 @@ import { useParams } from 'next/navigation';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Link from 'next/link';
-import { projects } from '../page';
+import { projects } from '@/lib/projects';
 
 export default function ProjectDetailPage() {
   const params = useParams();
