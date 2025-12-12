@@ -1,67 +1,25 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { useState, useEffect } from 'react';
 
 export default function Hero() {
-  const [particles, setParticles] = useState<any[]>([]);
-
-  useEffect(() => {
-    setParticles(
-      [...Array(80)].map(() => ({
-        size: Math.random() * 8 + 4,
-        left: Math.random() * 100,
-        top: Math.random() * 100,
-        x: Math.random() * 100 - 50,
-        y: Math.random() * 100 - 50,
-        scale: Math.random() + 0.5,
-        duration: Math.random() * 10 + 10
-      }))
-    );
-  }, []);
 
   return (
     <section className="relative flex items-center justify-center pt-20 pb-0 bg-white dark:bg-black" style={{ minHeight: '80vh' }}>
-      {/* Animated Particles */}
-      <div className="absolute inset-0 overflow-hidden">
-        {particles.map((particle, i) => (
-          <motion.div
-            key={i}
-            className="absolute bg-black/60 dark:bg-white/40 rounded-full shadow-sm"
-            style={{
-              width: particle.size,
-              height: particle.size,
-              left: `${particle.left}%`,
-              top: `${particle.top}%`,
-            }}
-            animate={{
-              x: [0, particle.x, 0],
-              y: [0, particle.y, 0],
-              scale: [1, particle.scale, 1],
-              opacity: [0.2, 0.6, 0.2],
-            }}
-            transition={{
-              duration: particle.duration,
-              repeat: Infinity,
-              ease: "linear"
-            }}
-          />
-        ))}
-      </div>
-      
-      {/* Minimal Geometric Accents */}
-      <div className="absolute inset-0 overflow-hidden opacity-20">
-        <motion.div
-          animate={{ rotate: 360 }}
-          transition={{ duration: 50, repeat: Infinity, ease: "linear" }}
-          className="absolute top-1/4 left-1/4 w-[600px] h-[600px] border border-black/20 dark:border-white/20 rounded-full"
-        />
-        <motion.div
-          animate={{ rotate: -360 }}
-          transition={{ duration: 40, repeat: Infinity, ease: "linear" }}
-          className="absolute bottom-1/4 right-1/4 w-[500px] h-[500px] border border-black/20 dark:border-white/20 rounded-full"
-        />
-      </div>
+      {/* Background Video */}
+      <video 
+        autoPlay 
+        muted 
+        loop 
+        playsInline
+        className="absolute inset-0 w-full h-full object-cover"
+      >
+        <source src="/hero.mp4" type="video/mp4" />
+        <source src="/hero.webm" type="video/webm" />
+      </video>
+      {/* Video Overlay */}
+      <div className="absolute inset-0 bg-white/70 dark:bg-black/70"></div>
+
 
       {/* Content - Centered */}
       <div className="container mx-auto px-4 text-center relative z-10">

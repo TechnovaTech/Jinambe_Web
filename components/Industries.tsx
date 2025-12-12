@@ -1,6 +1,9 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import dynamic from 'next/dynamic';
+
+const IndustriesThree = dynamic(() => import('./IndustriesThree'), { ssr: false });
 
 const industries = [
   { 
@@ -32,6 +35,10 @@ const industries = [
 export default function Industries() {
   return (
     <section id="industries" className="relative py-16 bg-gray-50 dark:bg-gray-950 overflow-hidden">
+      {/* 3D Element - Right Side Between Sections */}
+      <div className="absolute right-0 -bottom-8 translate-x-1/3 w-60 h-60 pointer-events-none z-10">
+        <IndustriesThree />
+      </div>
       {/* Striped Background */}
       <div className="absolute inset-0 opacity-[0.02]">
         <div className="absolute inset-0 text-black dark:text-white" style={{ backgroundImage: 'repeating-linear-gradient(45deg, currentColor 0px, currentColor 2px, transparent 2px, transparent 40px)' }}></div>

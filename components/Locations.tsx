@@ -1,6 +1,9 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import dynamic from 'next/dynamic';
+
+const LocationsThree = dynamic(() => import('./LocationsThree'), { ssr: false });
 
 const locations = [
   'Toronto', 'New York', 'Florida', 'France', 'Westminster', 'Germany',
@@ -9,7 +12,11 @@ const locations = [
 
 export default function Locations() {
   return (
-    <section className="py-16 bg-gray-50 dark:bg-gray-950">
+    <section className="relative py-16 bg-gray-50 dark:bg-gray-950 overflow-hidden">
+      {/* 3D Element - Top beside heading */}
+      <div className="absolute left-0 top-4 -translate-x-1/5 w-72 h-72 pointer-events-none z-10">
+        <LocationsThree />
+      </div>
       <div className="container mx-auto px-4">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}

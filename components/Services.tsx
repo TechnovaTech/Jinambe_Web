@@ -1,6 +1,9 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import dynamic from 'next/dynamic';
+
+const ServicesThree = dynamic(() => import('./ServicesThree'), { ssr: false });
 
 const services = [
   {
@@ -48,6 +51,10 @@ const services = [
 export default function Services() {
   return (
     <section id="services" className="relative py-16 bg-gray-50 dark:bg-gray-950 overflow-hidden">
+      {/* 3D Element - Top Left */}
+      <div className="absolute left-0 top-12 -translate-x-1/3 w-60 h-60 pointer-events-none z-10">
+        <ServicesThree />
+      </div>
       {/* Background Shapes */}
       <div className="absolute inset-0 overflow-hidden opacity-5">
         <div className="absolute top-40 left-20 w-96 h-96 bg-black dark:bg-white rounded-full blur-3xl"></div>
@@ -80,7 +87,7 @@ export default function Services() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.1 }}
-              className="group relative bg-white dark:bg-black backdrop-blur-sm p-8 rounded-3xl border border-black/10 dark:border-white/10 transition-all duration-700 cursor-pointer overflow-hidden"
+              className="group relative bg-white dark:bg-black backdrop-blur-sm p-8 rounded-3xl border border-black/10 dark:border-white/10 transition-all duration-700 cursor-pointer overflow-hidden hover:scale-105 hover:shadow-2xl hover:border-blue-500/30 hover:-translate-y-2"
             >
               {/* Sliding Border Effect */}
               <div className="absolute inset-0 rounded-3xl">

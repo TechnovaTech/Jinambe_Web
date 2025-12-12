@@ -69,7 +69,7 @@ export default function WhyChooseUs() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.1, duration: 0.5 }}
-              className="bg-white dark:bg-black p-10 rounded-3xl border border-black/10 dark:border-white/10 hover:border-black/30 dark:hover:border-white/30 hover:shadow-xl transition-all duration-500 h-full text-center group cursor-pointer"
+              className="bg-white dark:bg-black p-10 rounded-3xl border border-black/10 dark:border-white/10 hover:border-purple-500/50 dark:hover:border-purple-400/50 hover:shadow-2xl hover:scale-105 hover:-translate-y-3 transition-all duration-500 h-full text-center group cursor-pointer"
             >
               <div className="text-5xl mb-6">
                 {feature.icon}
